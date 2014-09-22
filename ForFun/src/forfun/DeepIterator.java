@@ -1,4 +1,5 @@
 package forfun;
+
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
@@ -51,7 +52,8 @@ public class DeepIterator implements Iterator<Integer> {
 
 	@Override
 	public void remove() {
-		throw new UnsupportedOperationException("This is not supported right now.");
+		throw new UnsupportedOperationException(
+				"This is not supported right now.");
 	}
 
 	public static void main(String[] args) {
@@ -72,7 +74,8 @@ public class DeepIterator implements Iterator<Integer> {
 		}
 
 		// Use assert if you want
-		System.out.println(String.format("newList size is %d, expcted 3", newList.size()));
+		System.out.println(String.format("newList size is %d, expcted 3",
+				newList.size()));
 
 		list1 = new LinkedList();
 		newList = new LinkedList<Integer>();
@@ -82,7 +85,8 @@ public class DeepIterator implements Iterator<Integer> {
 		}
 
 		// assertTrue(newList.size() == 0);
-		System.out.println(String.format("newList size is %d, expcted 0", newList.size()));
+		System.out.println(String.format("newList size is %d, expcted 0",
+				newList.size()));
 
 		list1 = new LinkedList();
 		list1.add(new LinkedList<Integer>());
@@ -107,7 +111,8 @@ public class DeepIterator implements Iterator<Integer> {
 		}
 
 		// assertTrue(newList.size() == 5);
-		System.out.println(String.format("newList size is %d, expcted 5", newList.size()));
+		System.out.println(String.format("newList size is %d, expcted 5",
+				newList.size()));
 
 		list3 = new LinkedList<Integer>();
 		list3.add(3);
@@ -127,6 +132,7 @@ public class DeepIterator implements Iterator<Integer> {
 		while (di.hasNext()) {
 			newList.add(di.next());
 		}
-		System.out.println(String.format("newList size is %d, expcted 6", newList.size()));
+		System.out.println(String.format("newList size is %d, expcted 6",
+				newList.size()));
 	}
 }
