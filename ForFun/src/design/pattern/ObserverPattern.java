@@ -1,11 +1,11 @@
-package forfun;
+package design.pattern;
 
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 import java.util.ArrayList;
 import java.util.List;
 
-import forfun.MyModel.Person;
+import design.pattern.MyModel.Person;
 
 public class ObserverPattern {
 	public static void main(String[] args) {

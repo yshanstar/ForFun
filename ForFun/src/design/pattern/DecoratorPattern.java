@@ -1,4 +1,5 @@
-package forfun;
+package design.pattern;
+
 
 public class DecoratorPattern {
 	public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package forfun;
+package ood;
 
 import java.util.Iterator;
 import java.util.Vector;
