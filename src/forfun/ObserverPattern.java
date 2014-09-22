@@ -29,7 +29,7 @@ class MyModel {
 	public static final String LASTNAME = "lastname";
 
 	private List<Person> persons = new ArrayList<Person>();
-	private List<PropertyChangeListener> listener = new ArrayList<PropertyChangeListener>();
+	private List<PropertyChangeListener> listeners = new ArrayList<PropertyChangeListener>();
 
 	public List<Person> getPersons() {
 		return this.persons;
@@ -42,14 +42,14 @@ class MyModel {
 
 	private void notifyListeners(Object object, String property,
 			String oldValue, String newValue) {
-		for (PropertyChangeListener name : listener) {
-			name.propertyChange(new PropertyChangeEvent(this, property,
+		for (PropertyChangeListener listener : listeners) {
+			listener.propertyChange(new PropertyChangeEvent(this, property,
 					oldValue, newValue));
 		}
 	}
 
 	public void addChangeListener(PropertyChangeListener newListener) {
-		this.listener.add(newListener);
+		this.listeners.add(newListener);
 	}
 
 	class Person {
