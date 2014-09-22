@@ -1,3 +1,4 @@
+package forfun;
 /*
  * 	Given a string, print the character which appears the maximum number of times in the string. 
 	The string will contain only ascii characters. If there is a tie in the maximum number 
